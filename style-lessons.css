@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 100px;
+    background-color: rgb(129, 124, 124);
+}
+
+.conteiner {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.content {
+    height: 700px;
+}
+
+.text {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 58px;
+    color: #222222;
+}
+
+.footer {
+    height: 100px;
+    background-color: rgb(129, 124, 124);
+
+}
