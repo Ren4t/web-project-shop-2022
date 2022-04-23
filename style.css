@@ -6,6 +6,7 @@
 a {
     text-decoration: none;
     color: brown;
+    display: block;
 }
 
 /* img {
@@ -19,133 +20,41 @@ a {
 }
 
 .header {
-    background-color: black;
+    height: 100px;
+    background: rgb(243, 238, 238);
 }
 
-.header__conteiner {
-    height: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.header__logo {
-    margin: 0 41px 0 0;
-}
-
-.header__logout {
-    margin: 0 0 0 33px;
-}
-
-.header__cart {
-    margin: 0 0 0 33px;
-}
-
-.title {
-    background-color: #F1E4E6;
-}
-
-.title__conteiner {
-    height: 764px;
-    display: flex;
-    justify-content: center;
-}
-
-.title__image {
-    width: 800px;
-}
-
-.title__border {
-    width: 12px;
-    height: 92px;
-    background-color: #F16D7F;
-    align-self: center;
-    margin: 0 16px 0 0;
-}
-
-.title__heading {
-    width: 772px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.title__main-heading {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 48px;
-    line-height: 58px;
-    color: #222222;
-}
-
-.title__main-paragraph {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 38px;
-    color: #222222;
-}
-
-.title__main-paragraph_red {
-    color: #F16D7F;
-}
-
-.products__items {
-    margin: 65px 0 30px 0;
+.header__top {
+    height: 100px;
     display: flex;
     justify-content: space-between;
-}
-
-.products__box {
-    width: 360px;
-    height: 260px;
-    display: flex;
-    justify-content: center;
     align-items: center;
 }
 
-.products__women_url {
-    background-image: url('img/women.png');
-}
-
-.products__men_url {
-    background-image: url('img/men.png');
-}
-
-.products__kids_url {
-    background-image: url('img/kids.png');
-}
-
-.products__box-accesories {
-    width: 100%;
-    height: 180px;
+.header__left {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
-.products__accesories_url {
-    background-image: url('img/accesories.png');
+.header__forma {
+    display: flex;
+
 }
 
-.products__paragraph {
-    font-family: Lato;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #fff;
+.header__browse {
+    border-radius: 0;
 }
 
-.products__heading {
-    font-family: Lato;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 29px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #F16D7F;
+.header__input {
+    padding: 10px;
+    border-radius: 0;
+    border-collapse: inherit;
+}
+
+.header__lupe {
+    border-radius: 0;
+}
+
+.header__right {
+    display: flex;
 }
