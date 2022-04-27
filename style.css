@@ -1,3 +1,7 @@
+:root {
+    --border-color: #e8e8e8;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +11,12 @@ a {
     text-decoration: none;
     color: brown;
     display: block;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
 }
 
 /* img {
@@ -21,7 +31,6 @@ a {
 
 .header {
     height: 100px;
-    background: rgb(243, 238, 238);
 }
 
 .header__top {
@@ -36,25 +45,309 @@ a {
     align-items: center;
 }
 
+.header__logo {
+    margin: 0 13px 0 0;
+}
+
+.header__logo-title {
+    text-transform: uppercase;
+    margin: 0 37px 0 0;
+}
+
+.header__logo-title_pink {
+    color: #f27a8a;
+}
+
 .header__forma {
     display: flex;
-
 }
 
 .header__browse {
+    position: relative;
+}
+
+.header__browse-button {
     border-radius: 0;
+    border: 1px solid var(--border-color);
+    border-collapse: inherit;
+    padding: 10px;
+    background-color: #f8f8f8;
+}
+
+.header__browse:hover .header__nav-box {
+    display: block;
+}
+
+.header__browse:hover .header__nav-box::before {
+    top: -9px;
 }
 
 .header__input {
     padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 0;
+    border-collapse: inherit;
+}
+
+.header__input:focus {
+    border: 1px solid var(--border-color);
     border-radius: 0;
     border-collapse: inherit;
 }
 
 .header__lupe {
+    border: 1px solid var(--border-color);
     border-radius: 0;
+    background-color: #fff;
 }
 
 .header__right {
     display: flex;
+}
+
+.header__cart {
+    margin: 0 26px 0 0;
+    position: relative;
+}
+
+.header__nav-cart {
+    width: 262px;
+    padding: 0 17px 21px 17px;
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    position: absolute;
+    display: none;
+}
+
+.header__cart:hover .header__nav-cart {
+    display: block;
+}
+
+.header__card-cart {
+    display: flex;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.header__card-image {
+    width: 72px;
+    height: 85px;
+    margin: 21px 15px 21px 0;
+}
+
+.header__card-info {
+    flex-grow: 1;
+    margin-top: 21px;
+}
+
+.header__card-title {
+    margin: 12px 0 8px 0;
+    font-family: Lato;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+.header__card-stars {
+    font-family: 'Font Awesome';
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #e4af48;
+}
+
+.header__card-price {
+    font-family: Lato;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #f16d7f;
+}
+
+.header__card-price_size-x {
+    font-size: 10px;
+    margin: 0 5px 0 5px;
+}
+
+.header__card-cross {
+    align-self: center;
+}
+
+.header__cart-total-price {
+    margin: 19px 0 32px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__cart-total-title {
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+.header__cart-link-bottom {
+    width: 100%;
+    height: 50px;
+    margin-top: 11px;
+    border: 1px solid var(--border-color);
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #4a4a4a;
+    text-align: center;
+}
+
+.header__cart-link-bottom_pink {
+    border: 1px solid #f16d7f;
+    color: #f16d7f;
+}
+
+.header__account {
+    width: 130px;
+    height: 38px;
+    background-color: #f16d7f;
+    font-family: Lato;
+    font-size: 15px;
+    line-height: 38px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    text-align: center;
+}
+
+.header__line {
+    height: 1px;
+    background-color: var(--border-color);
+    border: transparent;
+}
+
+.header__bottom {}
+
+.header__list {
+    height: 51px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__item {
+    position: relative;
+}
+
+.header__menu-link {
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #222222;
+    text-transform: uppercase;
+    padding: 10px 22px;
+}
+
+.header__nav-title {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #232323;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* .header__item:last-child {
+    margin: 0px;
+} */
+
+.header__nav-box {
+    /* min-width: 800px; */
+    padding: 20px;
+    position: absolute;
+    top: 40px;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    display: none;
+    background-color: white;
+    z-index: 1;
+}
+
+.header__nav-box::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    position: absolute;
+    top: -8px;
+    left: 36px;
+    transform: rotate(45deg);
+    border-top: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+}
+
+.header__box {
+    margin: 0 40px 0 0;
+}
+
+.header__nav-advertising {
+    background-image: url("img/nav-advertising.png");
+    width: 255px;
+    height: 118px;
+    position: relative;
+    align-self: flex-end;
+}
+
+.header__nav-advertising-title {
+    position: absolute;
+    bottom: 15px;
+    right: 25px;
+    font-family: Lato;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+}
+
+.header__nav-link {
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #646464;
+}
+
+.header__nav-link:hover {
+    color: #f16d7f;
+}
+
+
+.header__item:hover .header__nav-box {
+    display: flex;
+}
+
+.header__item_last:hover .header__nav-box {
+    right: 0;
+    left: auto;
+}
+
+.header__item_last:hover .header__nav-box::before {
+    right: 50px;
+    left: auto;
 }
