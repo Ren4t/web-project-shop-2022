@@ -385,6 +385,8 @@ img {
 
 .baner {
   background-color: #e8e8e8;
+  background-image: url("img/image_baner.png");
+  background-size: cover;
 }
 
 .baner__flex {
@@ -416,7 +418,6 @@ img {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  z-index: 1;
 }
 
 .baner__title {
@@ -703,12 +704,14 @@ img {
 }
 
 .subscribe {
-  background-color: rgba(242, 242, 242, 0.5);
+  background-image: url("img/subscribe_bg.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .subscribe__flex {
   height: 438px;
-  background-image: url("img/subscribe_bg.png");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -767,5 +770,117 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.footer {
+  margin: 109px 0 0 0;
+}
+
+.footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__brand-box {
+  margin: 0 64px 0 0;
+}
+
+.footer__brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__logo {
+  margin: 0 13px 0 0;
+}
+
+.footer__brand-name {
+  font-family: Lato;
+  font-size: 27px;
+  line-height: 59px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #3e3e40;
+}
+
+.footer__brand-text {
+  width: 400px;
+  padding: 10px;
+  margin: 29px 0 0 0;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+  color: #898989;
+  text-align: justify;
+}
+
+.footer__box-title {
+  font-family: Lato;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #f16d7f;
+  text-transform: uppercase;
+  margin-bottom: 45px;
+}
+
+.footer__box-link {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 59px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #898989;
+}
+
+.footer__bg {
+  background-color: #e6e6e6;
+}
+
+.footer__bottom {
+  margin: 89px 0 0 0;
+  height: 79px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__copy {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 42px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #7a7a7a;
+}
+
+.footer__bottom-box {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__bottom-link {
+  display: block;
+  margin: 0 0 0 5px;
+  width: 32px;
+  height: 32px;
+  background-color: #a14949;
 }
 /*# sourceMappingURL=style.css.map */
